@@ -3,6 +3,6 @@ export function tempoParaSegundos(tempo: String) {
     tempo.split(":");
   
   const horasEmSegundos = Number(horas) * 3600;
-  const minutosEmSegundos = Number(horas) * 60;
+  const minutosEmSegundos = Number(minutos) * 60;
   return horasEmSegundos + minutosEmSegundos + Number(segundos);
 }
