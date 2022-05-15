@@ -10,9 +10,9 @@ export default function Item ({
   selecionaTarefa 
 }: Props) {
   return <li 
-      className={`${style.item} ${selecionado ? style.
-        itemSelecionado : ''} ${completado ? style.
-        itemCompletado : ''}`} 
+      className={`${style.item} ${selecionado ? 
+        style.itemSelecionado : ''} ${completado ? 
+          style.itemCompletado : ''}`} 
       onClick={() => !completado && selecionaTarefa({
         tarefa, tempo, selecionado, completado, id
       })} 
